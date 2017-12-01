@@ -1,0 +1,54 @@
+.row, 
+.column {
+    box-sizing: border-box;
+}
+
+.row:before,
+.row:after {
+    content: " ";
+    display: table;
+}
+
+.row:after {
+    clear: both;
+}
+
+.column {
+    position: relative;
+    float: left;
+    display: block;
+}
+
+.column + .column {
+    margin-left: 1.6%;
+}
+
+.game-tile {
+    width: 32.2666666667%;
+}
+
+@media only screen and (max-width: 1000px) {
+    .game-tile {
+        width: 49.2%;
+    }
+    .game-tile:nth-child(2n+3) {
+        margin-left: 0;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .game-tile:nth-child(3n + 4) {
+        margin-left: 0px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .game-tile {
+        float: none;
+        width: auto;
+    }
+  
+    .column + .column {
+        margin-left: 0;
+    }
+}

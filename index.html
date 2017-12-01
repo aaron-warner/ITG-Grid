@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Aaron Warner">
+    <meta name="description" content="Intouch Games grid system for the technical coding challenege stage.">
+    
+    <title>Intouch Games - Grid System</title>
+    
+    <!-- Bootstrap CDN 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">-->
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Google Font Links Below -->
+    <link href="https://fonts.googleapis.com/css?family=Boogaloo" rel="stylesheet">
+
+    <!-- Custom CSS Links Below -->
+    <link rel="stylesheet" type="text/css" href="src/css/style.css">
+    <link rel="stylesheet" type="text/css" href="src/css/grid.css">
+
+</head>
+<body>
+
+	<!-- Start Header -->
+	<div class="header-container">
+		<header>
+			<h1 class="text-center">HEADER</h1>
+		</header>
+	</div>
+	<!-- End Header -->
+
+	<!-- Below you will find HTML code for each .game-tile within the .grid-container. Ideally
+		 we would have a foreach loop here instead which repeats itself while there is still data 
+		 to be pulled from the database. This way we can keep the core HTML for .game-tile the same but change certain
+		 parts each loop iteration such as the game image, current jackpot etc. This way we only have to write
+		 the HTML once so is easily maintainable and also easily editable. -->
+
+	<!-- PLEASE NOTE: currently only the first 'send to mobile' button will trigger the modal pop-up
+		 as javascript is looking for only one element with that particular ID. Ideally within the foreach loop
+		 mentioned above we could change the ID of each 'send to mobile' button per iteration and each game 
+		 would have it's own modal rather than a global one -->
+
+	<!-- Start Content -->
+	<div class="center-this">
+		<div class="grid-container row">
+			
+			<div class="column column-4 game-tile">
+				<div class="img-container">
+					<img src="src/img/bonnie-and-clyde.png" width="100%" height="100%" alt="Bonnie and Clyde Game Image" />
+				</div>
+				<div class="overlay">
+					<div class="overlay-header">
+						<span class="jackpot-title">Jackpot:</span>
+						<br>
+						<span class="jackpot-amount">£2,784.56</span>
+					</div>
+					<div class="overlay-content">
+						<a href="https://www.mrspin.co.uk/online-slots/bonnie-and-clyde/" target="_blank" class="btn btn-primary"><span>More Info</span></a>
+						<br>
+						<a href="#" class="btn btn-secondary" id="modal-open"><span>Send To Mobile</span></a>
+					</div>
+				</div>
+			</div>
+
+			<div class="column column-4 game-tile">
+				<div class="img-container">
+					<img src="src/img/hollywood-wins.png" width="100%" height="100%" alt="Hollywood Wins Game Image" />
+				</div>
+				<div class="overlay">
+					<div class="overlay-header">
+						<span class="jackpot-title">Jackpot:</span>
+						<br>
+						<span class="jackpot-amount">£2,784.56</span>
+					</div>
+					<div class="overlay-content">
+						<a href="https://www.mrspin.co.uk/online-slots/hollywood-wins/" target="_blank" class="btn btn-primary"><span>More Info</span></a>
+						<br>
+						<a href="#" class="btn btn-secondary" id="modal-open"><span>Send To Mobile</span></a>
+					</div>
+				</div>
+			</div>
+
+			<div class="column column-4 game-tile">
+				<div class="img-container">
+					<img src="src/img/jewelette.png" width="100%" height="100%" alt="Jewelette Game Image" />
+				</div>
+				<div class="overlay">
+					<div class="overlay-header">
+						<span class="jackpot-title">Jackpot:</span>
+						<br>
+						<span class="jackpot-amount">£2,784.56</span>
+					</div>
+					<div class="overlay-content">
+						<a href="https://www.mrspin.co.uk/online-slots/jewelette/" target="_blank" class="btn btn-primary"><span>More Info</span></a>
+						<br>
+						<a href="#" class="btn btn-secondary" id="modal-open"><span>Send To Mobile</span></a>
+					</div>
+				</div>
+			</div>
+
+			<div class="column column-4 game-tile">
+				<div class="img-container">
+					<img src="src/img/meet-the-draculas.png" width="100%" height="100%" alt="Meet the Draculas Game Image" />
+				</div>
+				<div class="overlay">
+					<div class="overlay-header">
+						<span class="jackpot-title">Jackpot:</span>
+						<br>
+						<span class="jackpot-amount">£2,784.56</span>
+					</div>
+					<div class="overlay-content">
+						<a href="https://www.mrspin.co.uk/online-slots/meet-the-draculas/" target="_blank" class="btn btn-primary"><span>More Info</span></a>
+						<br>
+						<a href="#" class="btn btn-secondary" id="modal-open"><span>Send To Mobile</span></a>
+					</div>
+				</div>
+			</div>
+
+			<div class="column column-4 game-tile">
+				<div class="img-container">
+					<img src="src/img/monkey-kong.png" width="100%" height="100%" alt="Monkey Kong Game Image" />
+				</div>
+				<div class="overlay">
+					<div class="overlay-header">
+						<span class="jackpot-title">Jackpot:</span>
+						<br>
+						<span class="jackpot-amount">£2,784.56</span>
+					</div>
+					<div class="overlay-content">
+						<a href="https://www.mrspin.co.uk/online-slots/monkey-kong/" target="_blank" class="btn btn-primary"><span>More Info</span></a>
+						<br>
+						<a href="#" class="btn btn-secondary" id="modal-open"><span>Send To Mobile</span></a>
+					</div>
+				</div>
+			</div>
+
+			<div class="column column-4 game-tile">
+				<div class="img-container">
+					<img src="src/img/roulette.png" width="100%" height="100%" alt="Roulette Game Image" />
+				</div>
+				<div class="overlay">
+					<div class="overlay-header">
+						<span class="jackpot-title">Jackpot:</span>
+						<br>
+						<span class="jackpot-amount">£2,784.56</span>
+					</div>
+					<div class="overlay-content">
+						<a href="https://www.mrspin.co.uk/casino-games/roulette/" target="_blank" class="btn btn-primary"><span>More Info</span></a>
+						<br>
+						<a href="#" class="btn btn-secondary" id="modal-open"><span>Send To Mobile</span></a>
+					</div>
+				</div>
+			</div>
+
+			<div class="column column-4 game-tile">
+				<div class="img-container">
+					<img src="src/img/bonnie-and-clyde.png" width="100%" height="100%" alt="Bonnie and Clyde Game Image" />
+				</div>
+				<div class="overlay">
+					<div class="overlay-header">
+						<span class="jackpot-title">Jackpot:</span>
+						<br>
+						<span class="jackpot-amount">£2,784.56</span>
+					</div>
+					<div class="overlay-content">
+						<a href="https://www.mrspin.co.uk/online-slots/bonnie-and-clyde/" target="_blank" class="btn btn-primary"><span>More Info</span></a>
+						<br>
+						<a href="#" class="btn btn-secondary" id="modal-open"><span>Send To Mobile</span></a>
+					</div>
+				</div>
+			</div>
+
+			<div class="column column-4 game-tile">
+				<div class="img-container">
+					<img src="src/img/hollywood-wins.png" width="100%" height="100%" alt="Hollywood Wins Game Image" />
+				</div>
+				<div class="overlay">
+					<div class="overlay-header">
+						<span class="jackpot-title">Jackpot:</span>
+						<br>
+						<span class="jackpot-amount">£2,784.56</span>
+					</div>
+					<div class="overlay-content">
+						<a href="https://www.mrspin.co.uk/online-slots/hollywood-wins/" target="_blank" class="btn btn-primary"><span>More Info</span></a>
+						<br>
+						<a href="#" class="btn btn-secondary" id="modal-open"><span>Send To Mobile</span></a>
+					</div>
+				</div>
+			</div>
+
+			<div class="column column-4 game-tile">
+				<div class="img-container">
+					<img src="src/img/jewelette.png" width="100%" height="100%" alt="Jewelette Game Image" />
+				</div>
+				<div class="overlay">
+					<div class="overlay-header">
+						<span class="jackpot-title">Jackpot:</span>
+						<br>
+						<span class="jackpot-amount">£2,784.56</span>
+					</div>
+					<div class="overlay-content">
+						<a href="https://www.mrspin.co.uk/online-slots/jewelette/" target="_blank" class="btn btn-primary"><span>More Info</span></a>
+						<br>
+						<a href="#" class="btn btn-secondary" id="modal-open"><span>Send To Mobile</span></a>
+					</div>
+				</div>
+			</div>
+
+			<div class="column column-4 game-tile">
+				<div class="img-container">
+					<img src="src/img/meet-the-draculas.png" width="100%" height="100%" alt="Meet the Draculas Game Image" />
+				</div>
+				<div class="overlay">
+					<div class="overlay-header">
+						<span class="jackpot-title">Jackpot:</span>
+						<br>
+						<span class="jackpot-amount">£2,784.56</span>
+					</div>
+					<div class="overlay-content">
+						<a href="https://www.mrspin.co.uk/online-slots/meet-the-draculas/" target="_blank" class="btn btn-primary"><span>More Info</span></a>
+						<br>
+						<a href="#" class="btn btn-secondary" id="modal-open"><span>Send To Mobile</span></a>
+					</div>
+				</div>
+			</div>
+
+			<div class="column column-4 game-tile">
+				<div class="img-container">
+					<img src="src/img/monkey-kong.png" width="100%" height="100%" alt="Monkey Kong Game Image" />
+				</div>
+				<div class="overlay">
+					<div class="overlay-header">
+						<span class="jackpot-title">Jackpot:</span>
+						<br>
+						<span class="jackpot-amount">£2,784.56</span>
+					</div>
+					<div class="overlay-content">
+						<a href="https://www.mrspin.co.uk/online-slots/monkey-kong/" target="_blank" class="btn btn-primary"><span>More Info</span></a>
+						<br>
+						<a href="#" class="btn btn-secondary" id="modal-open"><span>Send To Mobile</span></a>
+					</div>
+				</div>
+			</div>
+
+			<div class="column column-4 game-tile">
+				<div class="img-container">
+					<img src="src/img/roulette.png" width="100%" height="100%" alt="Roulette Game Image" />
+				</div>
+				<div class="overlay">
+					<div class="overlay-header">
+						<span class="jackpot-title">Jackpot:</span>
+						<br>
+						<span class="jackpot-amount">£2,784.56</span>
+					</div>
+					<div class="overlay-content">
+						<a href="https://www.mrspin.co.uk/casino-games/roulette/" target="_blank" class="btn btn-primary"><span>More Info</span></a>
+						<br>
+						<a href="#" class="btn btn-secondary" id="modal-open"><span>Send To Mobile</span></a>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+	<!-- End Content -->
+
+	<!-- Start Modal -->
+	<div id="myModal" class="modal">
+		<!-- Modal content -->
+		<div class="modal-content">
+			<span class="close">&times;</span>
+
+			<h2>Send This Game to Play on Your Mobile!</h2>
+
+			<form action="#" method="POST" id="stm-form">
+				<input type="number" name="mobileNumber" placeholder="Enter your mobile number..." required="">
+				<button type="submit" form="stm-form" value="Submit" class="btn btn-primary">Submit</button>
+			</form>
+		</div>
+	</div>
+	<!-- End Modal -->
+
+	<!-- Start Footer -->
+	<div class="footer-container">
+		<footer>
+			<h1 class="text-center">FOOTER</h1>
+		</footer>
+	</div>
+	<!-- End Footer -->
+
+	<script type="text/javascript" src="src/js/main.js"></script>
+
+</body>
+</html>
